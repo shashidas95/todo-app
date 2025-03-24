@@ -30,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["task"])) {
   ];
 
   saveTasks($tasks);
-  header("Location:  /assignments/module-3/index.php");
+  header("Location:  /index.php");
   exit();
  }
 }
@@ -40,7 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["complete_task"])) {
  if (isset($tasks[$index])) {
   $tasks[$index]["completed"] = !$tasks[$index]["completed"];
   saveTasks($tasks);
-  header("Location: /assignments/module-3/index.php");
+  header("Location: /index.php");
   exit();
  }
 }
@@ -52,7 +52,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["delete_task"])) {
   // Reindex the array to avoid gaps in indexes
   $tasks = array_values($tasks);
   saveTasks($tasks);
-  header("Location: /assignments/module-3/index.php");
+  header("Location: /index.php");
   exit();
  }
 }

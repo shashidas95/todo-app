@@ -1,14 +1,18 @@
 [
     {
         "task": "traveling a mountain",
-        "completed": true
+        "completed": false
     },
     {
         "task": "project submission",
-        "completed": true
+        "completed": false
     },
     {
         "task": "watching movies",
+        "completed": false
+    },
+    {
+        "task": "watching tv",
         "completed": true
     }
 ]
